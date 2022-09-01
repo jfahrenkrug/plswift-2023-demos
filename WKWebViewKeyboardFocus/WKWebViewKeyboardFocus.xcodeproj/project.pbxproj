@@ -15,6 +15,7 @@
 		8FE0DD3B28C0B1540009A40B /* WKWebViewKeyboardFocusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE0DD3A28C0B1540009A40B /* WKWebViewKeyboardFocusTests.swift */; };
 		8FE0DD4528C0B1540009A40B /* WKWebViewKeyboardFocusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE0DD4428C0B1540009A40B /* WKWebViewKeyboardFocusUITests.swift */; };
 		8FE0DD4728C0B1540009A40B /* WKWebViewKeyboardFocusUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE0DD4628C0B1540009A40B /* WKWebViewKeyboardFocusUITestsLaunchTests.swift */; };
+		8FE0DD5428C0BBAB0009A40B /* demo.html in Resources */ = {isa = PBXBuildFile; fileRef = 8FE0DD5328C0BBAB0009A40B /* demo.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		8FE0DD4028C0B1540009A40B /* WKWebViewKeyboardFocusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WKWebViewKeyboardFocusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FE0DD4428C0B1540009A40B /* WKWebViewKeyboardFocusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKWebViewKeyboardFocusUITests.swift; sourceTree = "<group>"; };
 		8FE0DD4628C0B1540009A40B /* WKWebViewKeyboardFocusUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKWebViewKeyboardFocusUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8FE0DD5328C0BBAB0009A40B /* demo.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = demo.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				8FE0DD2C28C0B1540009A40B /* Assets.xcassets */,
 				8FE0DD2E28C0B1540009A40B /* LaunchScreen.storyboard */,
 				8FE0DD3128C0B1540009A40B /* Info.plist */,
+				8FE0DD5328C0BBAB0009A40B /* demo.html */,
 			);
 			path = WKWebViewKeyboardFocus;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FE0DD3028C0B1540009A40B /* LaunchScreen.storyboard in Resources */,
+				8FE0DD5428C0BBAB0009A40B /* demo.html in Resources */,
 				8FE0DD2D28C0B1540009A40B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

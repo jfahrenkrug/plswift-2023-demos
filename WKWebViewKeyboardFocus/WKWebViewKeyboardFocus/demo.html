@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>NSSpain 2022 WKWebView Demo</title>
+    <style>
+      h1 {
+        font-size: 64pt;
+      }
+      input, button {
+        display: block;
+        font-size: 22pt;
+        margin: 32px;
+      }
+      .gradient-bg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+      }
+      .center {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="gradient-bg">
+      <h1 class="center">⌨️</h1>
+      <input class="center" type="text" id="textfield"/>
+      <button class="center" onclick="document.getElementById('textfield').focus()">Focus using HTML button</button>
+    </div>
+  </body>
+</html>
+
