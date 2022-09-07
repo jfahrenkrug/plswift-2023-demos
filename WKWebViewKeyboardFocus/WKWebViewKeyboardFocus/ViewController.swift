@@ -32,6 +32,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // WebViewKeyboardFocusHelper.applyKeyboardFocusFixIfNeeded()
+        
         view.addSubview(webView)
         view.addSubview(focusButton)
         view.backgroundColor = UIColor(red:0.85, green:0.85, blue:0.85, alpha:1.00) // light gray
@@ -60,7 +62,4 @@ class ViewController: UIViewController {
             }
         }
     }
-
-
 }
-
