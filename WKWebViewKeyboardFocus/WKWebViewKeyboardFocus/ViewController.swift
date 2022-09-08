@@ -9,9 +9,9 @@ import UIKit
 import WebKit
 
 class ViewController: UIViewController {
-    
-    private let webView: WKWebView = {
-        let webView = WKWebView(frame: .zero)
+        
+    private let webView: KeyboardFocusableWebView = {
+        let webView = KeyboardFocusableWebView(frame: .zero)
         webView.translatesAutoresizingMaskIntoConstraints = false
         return webView
     }()
@@ -32,8 +32,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // WebViewKeyboardFocusHelper.applyKeyboardFocusFixIfNeeded()
-        
         view.addSubview(webView)
         view.addSubview(focusButton)
         view.backgroundColor = UIColor(red:0.85, green:0.85, blue:0.85, alpha:1.00) // light gray
@@ -50,8 +48,10 @@ class ViewController: UIViewController {
     }
     
     private func focusTextField() {
-        webView.evaluateJavaScript("document.getElementById('textfield').focus()") { res, error in
+        webView.keyboardDisplayRequiresUserAction = false
+        webView.evaluateJavaScript("document.getElementById('textfield').focus()") { [weak self] res, error in
             print("JS evaluated.")
+            self?.webView.keyboardDisplayRequiresUserAction = true
             
             if let res = res {
                 print("Res: \(res)")

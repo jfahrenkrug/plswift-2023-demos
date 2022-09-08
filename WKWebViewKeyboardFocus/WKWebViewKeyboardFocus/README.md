@@ -10,3 +10,4 @@ This demo shows how to use method swizzling of a private WebKit method to bring 
 5. The old UIWebView had a property called [`keyboardDisplayRequiresUserAction`]( https://developer.apple.com/documentation/uikit/uiwebview/1617967-keyboarddisplayrequiresuseractio). Implies that WebKit cares about whether an action was triggered by a user interaction or not.
 6. First step: Has someone else had this problem? [Google for "wkwebview focus keyboard"](https://www.google.com/search?client=safari&rls=en&q=wkwebview+focus+keyboard&ie=UTF-8&oe=UTF-8). First link: https://stackoverflow.com/questions/32449870/programmatically-focus-on-a-form-in-a-webview-wkwebview
 6. Thankfully WebKit is open source.
+7. Set breakpoint in KeyboardFocusableWebView's swizzled block. Inspect `me` in lldb. Inspect `me.superview.superview`.

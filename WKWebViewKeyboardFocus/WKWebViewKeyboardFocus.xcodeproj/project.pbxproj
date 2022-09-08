@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8F34828828C89CDF0042750B /* WebViewKeyboardFocusHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F34828728C89CDF0042750B /* WebViewKeyboardFocusHelper.swift */; };
+		8F34828A28C9B77B0042750B /* KeyboardFocusableWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F34828928C9B77B0042750B /* KeyboardFocusableWebView.swift */; };
 		8FE0DD2428C0B1510009A40B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE0DD2328C0B1510009A40B /* AppDelegate.swift */; };
 		8FE0DD2628C0B1510009A40B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE0DD2528C0B1510009A40B /* SceneDelegate.swift */; };
 		8FE0DD2828C0B1510009A40B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE0DD2728C0B1510009A40B /* ViewController.swift */; };
@@ -39,6 +40,7 @@
 /* Begin PBXFileReference section */
 		8F34828428C8796C0042750B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		8F34828728C89CDF0042750B /* WebViewKeyboardFocusHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewKeyboardFocusHelper.swift; sourceTree = "<group>"; };
+		8F34828928C9B77B0042750B /* KeyboardFocusableWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardFocusableWebView.swift; sourceTree = "<group>"; };
 		8FE0DD2028C0B1510009A40B /* WKWebViewKeyboardFocus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WKWebViewKeyboardFocus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FE0DD2328C0B1510009A40B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8FE0DD2528C0B1510009A40B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				8FE0DD2328C0B1510009A40B /* AppDelegate.swift */,
+				8F34828928C9B77B0042750B /* KeyboardFocusableWebView.swift */,
 				8FE0DD2528C0B1510009A40B /* SceneDelegate.swift */,
 				8FE0DD2728C0B1510009A40B /* ViewController.swift */,
 				8F34828728C89CDF0042750B /* WebViewKeyboardFocusHelper.swift */,
@@ -264,6 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FE0DD2828C0B1510009A40B /* ViewController.swift in Sources */,
+				8F34828A28C9B77B0042750B /* KeyboardFocusableWebView.swift in Sources */,
 				8FE0DD2428C0B1510009A40B /* AppDelegate.swift in Sources */,
 				8F34828828C89CDF0042750B /* WebViewKeyboardFocusHelper.swift in Sources */,
 				8FE0DD2628C0B1510009A40B /* SceneDelegate.swift in Sources */,
