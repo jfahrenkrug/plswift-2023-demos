@@ -38,6 +38,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+//        UIMenuBarItemSwiftMontereyCrashFix.applyIfNeeded()
+        UIMenuBarItemObjCMontereyCrashFix.applyIfNeeded()
+        
         view.addSubview(titleLabel)
         view.addSubview(textField)
         
