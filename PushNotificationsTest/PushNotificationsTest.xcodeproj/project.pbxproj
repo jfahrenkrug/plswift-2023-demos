@@ -13,7 +13,8 @@
 		8F3482C628CB12BA0042750B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F3482C428CB12BA0042750B /* Main.storyboard */; };
 		8F3482C828CB12BB0042750B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F3482C728CB12BB0042750B /* Assets.xcassets */; };
 		8F3482CB28CB12BB0042750B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F3482C928CB12BB0042750B /* LaunchScreen.storyboard */; };
-		8F3482D628CB12BB0042750B /* PushNotificationsTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3482D528CB12BB0042750B /* PushNotificationsTestTests.swift */; };
+		8F3482D628CB12BB0042750B /* PushNotificationServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3482D528CB12BB0042750B /* PushNotificationServiceTests.swift */; };
+		8F3482EF28CB176A0042750B /* PushNotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3482EE28CB176A0042750B /* PushNotificationService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,8 @@
 		8F3482CA28CB12BB0042750B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8F3482CC28CB12BB0042750B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F3482D128CB12BB0042750B /* PushNotificationsTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PushNotificationsTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8F3482D528CB12BB0042750B /* PushNotificationsTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationsTestTests.swift; sourceTree = "<group>"; };
+		8F3482D528CB12BB0042750B /* PushNotificationServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationServiceTests.swift; sourceTree = "<group>"; };
+		8F3482EE28CB176A0042750B /* PushNotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				8F3482C728CB12BB0042750B /* Assets.xcassets */,
 				8F3482C928CB12BB0042750B /* LaunchScreen.storyboard */,
 				8F3482CC28CB12BB0042750B /* Info.plist */,
+				8F3482EE28CB176A0042750B /* PushNotificationService.swift */,
 			);
 			path = PushNotificationsTest;
 			sourceTree = "<group>";
@@ -92,7 +95,7 @@
 		8F3482D428CB12BB0042750B /* PushNotificationsTestTests */ = {
 			isa = PBXGroup;
 			children = (
-				8F3482D528CB12BB0042750B /* PushNotificationsTestTests.swift */,
+				8F3482D528CB12BB0042750B /* PushNotificationServiceTests.swift */,
 			);
 			path = PushNotificationsTestTests;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F3482EF28CB176A0042750B /* PushNotificationService.swift in Sources */,
 				8F3482C328CB12BA0042750B /* ViewController.swift in Sources */,
 				8F3482BF28CB12BA0042750B /* AppDelegate.swift in Sources */,
 				8F3482C128CB12BA0042750B /* SceneDelegate.swift in Sources */,
@@ -208,7 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F3482D628CB12BB0042750B /* PushNotificationsTestTests.swift in Sources */,
+				8F3482D628CB12BB0042750B /* PushNotificationServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
