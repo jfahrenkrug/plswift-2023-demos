@@ -39,6 +39,7 @@
 		8F3482D128CB12BB0042750B /* PushNotificationsTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PushNotificationsTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F3482D528CB12BB0042750B /* PushNotificationServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationServiceTests.swift; sourceTree = "<group>"; };
 		8F3482EE28CB176A0042750B /* PushNotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationService.swift; sourceTree = "<group>"; };
+		8F6C336F28D1E76700B3D65A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +63,7 @@
 		8F3482B228CB12BA0042750B = {
 			isa = PBXGroup;
 			children = (
+				8F6C336F28D1E76700B3D65A /* README.md */,
 				8F3482BD28CB12BA0042750B /* PushNotificationsTest */,
 				8F3482D428CB12BB0042750B /* PushNotificationsTestTests */,
 				8F3482BC28CB12BA0042750B /* Products */,

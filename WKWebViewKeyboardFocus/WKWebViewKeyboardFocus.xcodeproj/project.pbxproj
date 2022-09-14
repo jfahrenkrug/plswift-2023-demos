@@ -84,6 +84,7 @@
 		8FE0DD1728C0B1510009A40B = {
 			isa = PBXGroup;
 			children = (
+				8F34828428C8796C0042750B /* README.md */,
 				8FE0DD2228C0B1510009A40B /* WKWebViewKeyboardFocus */,
 				8FE0DD3928C0B1540009A40B /* WKWebViewKeyboardFocusTests */,
 				8FE0DD4328C0B1540009A40B /* WKWebViewKeyboardFocusUITests */,
@@ -113,7 +114,6 @@
 				8FE0DD2E28C0B1540009A40B /* LaunchScreen.storyboard */,
 				8FE0DD3128C0B1540009A40B /* Info.plist */,
 				8FE0DD5328C0BBAB0009A40B /* demo.html */,
-				8F34828428C8796C0042750B /* README.md */,
 			);
 			path = WKWebViewKeyboardFocus;
 			sourceTree = "<group>";

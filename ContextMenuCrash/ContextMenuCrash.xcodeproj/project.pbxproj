@@ -45,6 +45,7 @@
 		8F34828B28C9C5AD0042750B = {
 			isa = PBXGroup;
 			children = (
+				8F3482AB28C9CA980042750B /* README.md */,
 				8F34829628C9C5AD0042750B /* ContextMenuCrash */,
 				8F34829528C9C5AD0042750B /* Products */,
 			);
@@ -68,7 +69,6 @@
 				8F3482A028C9C5AE0042750B /* Assets.xcassets */,
 				8F3482A228C9C5AE0042750B /* LaunchScreen.storyboard */,
 				8F3482A528C9C5AE0042750B /* Info.plist */,
-				8F3482AB28C9CA980042750B /* README.md */,
 				8F3482B128C9F6E30042750B /* UIMenuBarItemObjCMontereyCrashFix.h */,
 				8F3482AF28C9F6720042750B /* UIMenuBarItemObjCMontereyCrashFix.m */,
 				8F3482AE28C9F6720042750B /* ContextMenuCrash-Bridging-Header.h */,
