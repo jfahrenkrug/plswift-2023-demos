@@ -36,7 +36,7 @@ class UIMenuBarItemSwiftMontereyCrashFix {
                 let originalImplementation: IMP = method_getImplementation(method)
                 // Create a function constant of the correct type so Swift allows us to invoke it
                 let originalTypedImplementation: PropertiesMethodThrowingType = unsafeBitCast(originalImplementation, to: PropertiesMethodType.self)
-                // Create the new implementation that simply wraps the original and always passes in `true` for `userIsInteracting`.
+
                 let overrideBlock : @convention(block) (Any) -> Dictionary<String, Any> = { (me) in
                     print("calling swizzled method")
                     do {
