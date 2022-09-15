@@ -5,12 +5,8 @@
 //  Created by Johannes Fahrenkrug on 9/9/22.
 //
 
-import Foundation
-import UIKit
 import UserNotifications
 import Combine
-import os.log
-
 
 /// Service to handle push notifications
 class PushNotificationService: NSObject {

@@ -47,8 +47,8 @@ static BOOL hasCrashFixBeenApplied = NO;
                     @"identifier":@"com.apple.menu.application",
                     @"imageAlwaysVisible" : @0,
                     @"isAlternate" : @0,
-                    @"isEnabled" : @0,
-                    @"isHidden" : @1,
+                    @"isEnabled" : @0,   // <--- disable it
+                    @"isHidden" : @1,    // <--- hide it
                     @"isSeparatorItem" : @0,
                     @"keyEquivalent" : @"",
                     @"keyEquivalentModifiers" : @0,
