@@ -12,7 +12,7 @@ class CollectionViewCrashFixHelper {
     private static var _methodSwizzlingHasBeenAttempted: Bool = false
     
     /// Type of the method that needs to be swizzled
-    typealias ScrollToItemAtIndexPathMethodType = @convention(c) (UICollectionView, IndexPath, Int64, Bool) -> Void
+    typealias ScrollToItemAtIndexPathMethodType = @convention(c) (UICollectionView, IndexPath, UInt, Bool) -> Void
     
     /// Safely apply the fix
     static func applyCrashFixIfNeeded() {
@@ -33,14 +33,30 @@ class CollectionViewCrashFixHelper {
                 let originalImplementation: IMP = method_getImplementation(method)
                 // Create a function constant of the correct type so Swift allows us to invoke it
                 let originalTypedImplementation: ScrollToItemAtIndexPathMethodType = unsafeBitCast(originalImplementation, to: ScrollToItemAtIndexPathMethodType.self)
+                
+                
+                
+                
+                
+                
+                
                 // Create the new implementation that only calls the original implementation
                 // if the requested indexPath is valid.
-                let overrideBlock : @convention(block) (UICollectionView, IndexPath, Int64, Bool) -> Void = { (me, indexPath, scrollPosition, animated) in
-                    print("calling swizzled method")
+                let overrideBlock : @convention(block) (UICollectionView, IndexPath, UInt, Bool) -> Void = { (me, indexPath, scrollPosition, animated) in
+                    print("Calling swizzled method")
+                    
+                    // Check if indexPath is within bounds before calling original impl.
                     if (me.numberOfSections > indexPath.section && me.numberOfItems(inSection: indexPath.section) > indexPath.item) {
                         originalTypedImplementation(me, indexPath, scrollPosition, animated)
                     }
                 }
+                
+                
+                
+                
+                
+                
+                
                 // Create a method implementation with the override block
                 let newImplementation: IMP = imp_implementationWithBlock(overrideBlock);
                 // Switch out the implementation
