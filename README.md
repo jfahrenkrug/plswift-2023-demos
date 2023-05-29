@@ -8,7 +8,7 @@ This project shows how to use method swizzling to enable a behavior in WKWebView
 
 ## SwiftUITabViewCrash
 
-This project shows how to work around a crash on iOS 16.0 when a SwiftUI `TabView` has no data to display. It also highlights that the fix needs to be implemented in Objective-C because [Swift's error handling behavior](https://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html#ID512) is different and thus won't catch the thrown exception.
+This project shows how to work around a crash on iOS 16.0 when a SwiftUI `TabView` has no data to display. It also highlights that the fix needs to be implemented in Objective-C because [Swift's error handling behavior](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/errorhandling/) is different and thus won't catch the thrown exception.
 
 ## PushNotificationsTest
 
