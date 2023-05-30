@@ -9,12 +9,20 @@ import UIKit
 import WebKit
 
 class ViewController: UIViewController {
-        
-    private let webView: KeyboardFocusableWebView = {
-        let webView = KeyboardFocusableWebView(frame: .zero)
+            
+    // Attempt 1
+    private let webView: WKWebView = {
+        let webView = WKWebView(frame: .zero)
         webView.translatesAutoresizingMaskIntoConstraints = false
         return webView
     }()
+    
+    // Attempt 2
+//    private let webView: KeyboardFocusableWebView = {
+//        let webView = KeyboardFocusableWebView(frame: .zero)
+//        webView.translatesAutoresizingMaskIntoConstraints = false
+//        return webView
+//    }()
     
     private lazy var focusButton: UIButton = {
         let symbolConfig = UIImage.SymbolConfiguration(pointSize: 32, weight: .bold, scale: .large)
@@ -40,6 +48,9 @@ class ViewController: UIViewController {
             webView.loadFileURL(demoFileURL, allowingReadAccessTo: demoFileURL)
         }
         
+        // Attempt 1
+//         WebViewKeyboardFocusHelper.applyKeyboardFocusFixIfNeeded()
+        
         let views = ["webView": webView, "button": focusButton]
         
         view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|[webView]-(20)-[button]-(100)-|", metrics: nil, views: views))
@@ -47,19 +58,40 @@ class ViewController: UIViewController {
         view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-[button]-|", metrics: nil, views: views))
     }
     
+    // Attempt 1
     private func focusTextField() {
-        webView.keyboardDisplayRequiresUserAction = false
-        webView.evaluateJavaScript("document.getElementById('textfield').focus()") { [weak self] res, error in
+        webView.evaluateJavaScript("document.getElementById('textfield').focus()") { res, error in
             print("JS evaluated.")
-            self?.webView.keyboardDisplayRequiresUserAction = true
-            
+
             if let res = res {
                 print("Res: \(res)")
             }
-            
+
             if let error = error {
                 print("Error: \(error)")
             }
         }
     }
+    
+    
+    
+    
+    
+    
+    // Attempt 2
+//    private func focusTextField() {
+//        webView.keyboardDisplayRequiresUserAction = false
+//        webView.evaluateJavaScript("document.getElementById('textfield').focus()") { [weak self] res, error in
+//            print("JS evaluated.")
+//            self?.webView.keyboardDisplayRequiresUserAction = true
+//
+//            if let res = res {
+//                print("Res: \(res)")
+//            }
+//
+//            if let error = error {
+//                print("Error: \(error)")
+//            }
+//        }
+//    }
 }

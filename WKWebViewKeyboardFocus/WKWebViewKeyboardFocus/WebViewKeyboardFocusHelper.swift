@@ -18,6 +18,11 @@ class WebViewKeyboardFocusHelper {
     
     /// Safely apply the fix
     static func applyKeyboardFocusFixIfNeeded() {
+        if #available(iOS 16.4, *) {
+            print("Running on iOS 16.4 or later, fix not needed.")
+            return
+        }
+        
         if !_methodSwizzlingHasBeenAttempted {
             guard let contentViewClass: AnyClass = NSClassFromString("WKContentView") else {
                 print("WKContentView class is not defined, aborting")
@@ -48,7 +53,7 @@ class WebViewKeyboardFocusHelper {
             }
             
             // Ensure that we only run this once per session
-            _methodSwizzlingHasBeenAttempted = true;
+            _methodSwizzlingHasBeenAttempted = true
         }
     }
 }

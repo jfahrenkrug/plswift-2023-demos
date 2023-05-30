@@ -31,6 +31,12 @@ static BOOL hasCrashFixBeenApplied = NO;
         Method method = class_getInstanceMethod(UICollectionView.class, selector);
         IMP original = method_getImplementation(method);
         
+        
+        
+        
+        
+        
+        
         // We wrap the original implementation call in a @try/@catch block. When the
         // exception happens, we catch it and prevent the crash.
         IMP override = imp_implementationWithBlock(^void(id collectionView, NSIndexPath *indexPath, NSUInteger scrollPosition, BOOL animated) {
@@ -38,10 +44,17 @@ static BOOL hasCrashFixBeenApplied = NO;
                 ((void (*)(id, SEL, NSIndexPath *, NSUInteger, BOOL))original)(collectionView, selector, indexPath, scrollPosition, animated);
             }
             @catch(NSException *exception) {
-                NSLog(@"Caught exception %@ and prevented crash.", exception);
+                NSLog(@"Caught exception and prevented crash.");
                 return;
             }
         });
+        
+        
+        
+        
+        
+        
+        
         method_setImplementation(method, override);
         
         hasCrashFixBeenApplied = YES;

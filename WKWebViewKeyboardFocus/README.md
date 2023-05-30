@@ -1,6 +1,6 @@
 # WKWebViewKeyboardFocus Demo
 
-This demo shows how to use method swizzling of a private WebKit method to bring up the keyboard when a text field is focussed through JavaScript instead of a user-initiated action. This needs to be run on iOS 15 or lower.
+This demo shows how to use method swizzling of a private WebKit method to bring up the keyboard when a text field is focussed through JavaScript instead of a user-initiated action. This needs to be run on iOS 16.3 or lower.
 
 ## Demo Steps
 

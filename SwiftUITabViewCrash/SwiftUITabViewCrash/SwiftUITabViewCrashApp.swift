@@ -11,13 +11,13 @@ import SwiftUI
 struct SwiftUITabViewCrashApp: App {
     init() {
         // Attempt 1
-        // CollectionViewCrashFixHelper.applyCrashFixIfNeeded()
+//        CollectionViewCrashFixHelper.applyCrashFixIfNeeded()
         
         // Attempt 2
-        // CollectionViewCrashFixHelper2.applyCrashFixIfNeeded()
+//        CollectionViewCrashFixHelper2.applyCrashFixIfNeeded()
         
         // Attempt 3
-        // CollectionViewObjCCrashFixHelper.applyCrashFixIfNeeded()
+//        CollectionViewObjCCrashFixHelper.applyCrashFixIfNeeded()
     }
     
     var body: some Scene {
